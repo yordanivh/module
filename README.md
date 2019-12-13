@@ -1,9 +1,10 @@
-# module
-This Repo contains code that can be used as a module and an example of how to use it
+
 
 # What this repo does
+This repo is contains code to be used as a module. A module has parts that cannot be changed and serve the perpose of a template. There are variable assigned to the module which can vary in order to get diiferent use of the same module.
 
 # Why use this repo
+This repo will give you an overview of how modules work in terraform and how you can apply using modules in your own code.
 
 # How to use this repo
  * Create a user in AWS, you require these two keys in order to be able to create resources in AWS
@@ -39,7 +40,7 @@ This Repo contains code that can be used as a module and an example of how to us
  terraform init
  ```
  
- * Plan the operation so that you see what actions will taken
+ * Plan the operation so that you see what actions will be taken
  
  ```
  terraform plan
@@ -58,7 +59,7 @@ This Repo contains code that can be used as a module and an example of how to us
  ```
  
  * The module is defined in the subfolder mod.
-   In the main folder the module is called by specifying its path
+   In the main folder code the module is called by specifying its path with command source.
 
   ```
   source = "./mod/"
@@ -77,6 +78,7 @@ This Repo contains code that can be used as a module and an example of how to us
   ```
   terraform destroy
   ```
+  
 # Sample output
 
 1. Init will download the necessary plugins
